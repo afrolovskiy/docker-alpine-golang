@@ -1,11 +1,12 @@
 FROM gliderlabs/alpine:3.1
 MAINTAINER Frederic Gingras <frederic@gingras.cc> (@kiasaki)
 
-RUN apk update
-RUN apk add curl git mercurial bzr
+RUN apk update && apk add curl git mercurial bzr
 
-RUN mkdir /goroot /gopath
-RUN curl -Ls https://storage.googleapis.com/golang/go1.4.2.linux-amd64.tar.gz | tar xvzf - -C / && mv /go /goroot
+RUN curl -Ls https://storage.googleapis.com/golang/go1.4.2.linux-amd64.tar.gz | \
+    tar xvzf - -C / \
+    && mv /go /goroot \
+    && mkdir /gopath
 
 ENV GOROOT /goroot
 ENV GOPATH /gopath
