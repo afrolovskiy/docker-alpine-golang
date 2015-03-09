@@ -1,7 +1,9 @@
 # Alpine Golang
 
 Alpine Golang is a docker image based in Alpine linux using a Dockerfile
-similar to google/golang.
+similar to [google/golang](https://registry.hub.docker.com/u/google/golang/).
+
+This image is [gliderlabs/alpine](https://github.com/gliderlabs/docker-alpine) image.
 
 ## Notes
 
