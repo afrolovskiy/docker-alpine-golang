@@ -1,4 +1,5 @@
 FROM gliderlabs/alpine:3.1
+MAINTAINER Frederic Gingras <frederic@gingras.cc> (@kiasaki)
 
 RUN apk update
 RUN apk add curl git mercurial bzr
