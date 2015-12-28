@@ -11,7 +11,7 @@ This image is [gliderlabs/alpine](https://github.com/gliderlabs/docker-alpine) i
 
 `GOPATH` is set to `/gopath`
 
-# Usage
+## Usage
 
 Create a Dockerfile in your golang application directory with the following content:
 
@@ -31,3 +31,7 @@ Then you can run the following command in your application directory:
 ```
 docker build -t my/app .
 ```
+
+## License
+
+See the `LICENSE` file.
