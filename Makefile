@@ -5,4 +5,4 @@ debug:
 	docker run -it --rm kiasaki/alpine-golang /bin/sh
 
 run:
-	docker run -i -P alpine-golang
+	docker run -it --rm kiasaki/alpine-golang ${CMD}
